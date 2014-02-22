@@ -1,11 +1,13 @@
 <pre><code>
 
 const int buttonPin = 2;    
-	// 컨스턴트(Constant)는 바뀌지 않는 항수이다. 이곳에서는 핀의 번호를 지정하기 위해 사용된다.
-	// "항수를 정의하는데 그것은 정수이며 이름은 buttonPin 이다." 
+	// 컨스턴트(Constant)는 바뀌지 않는 상수이다. 이곳에서는 핀의 번호를 지정하기 위해 사용된다.
+	// "상수를 정의하는데 그것은 정수이며 이름은 buttonPin 이다." 
 	// 즉 버튼핀 buttonPin이라는 이름을 2번 핀에게 지정하는 것이다.
+	// [achim] 정수인 변수 buttonPin에 2라는 상수값을 부여한다.
+	// [achim] do we need introduce read-only variable for wishlab? confusing, also might as well be "int buttonPin = 2;" for our use
 const int ledPin =  9;   
-	// ledPin 불빛이 나오는 LED가 연결된 핀은 아두위노의 9번째 핀에 연결한다.
+	// ledPin 불빛이 나오는 LED가 연결된 핀은 아두이노의 9번째 핀에 연결한다.
 int buttonState = 0;         
 	// 버튼의 상태를 읽기 위한 수가 필요하다. 그러면 값이 변할수 있는 변수를 사용한다.
 
@@ -16,7 +18,7 @@ void setup() {
   
   pinMode(buttonPin, INPUT_PULLUP);
     // buttonPin, 즉 푸시버튼의 핀을 인풋, 입력으로 사용하기 위해서 풀업-인풋으로 지정한다.  
-    // INPUT_PULLUP이란 아두위노의 내부적으로 풀업을 실행하고 있도록 한다. 
+    // INPUT_PULLUP이란 아두이노의 내부적으로 풀업을 실행하고 있도록 한다. 
     // 즉 푸시버튼과 저항으로 pull up button을 만들었을때 처럼 작동하게 된다.
 }
 
@@ -24,7 +26,7 @@ void loop(){
    
    buttonState = digitalRead(buttonPin);  
    // 푸시버튼의 값을 읽자. 이 코드를 그대로 읽으면,
-   // "푸시버튼의 상태는 버튼핀(위 코드에서 2번 핀으로 지정한 항수이다)을 디지털 신호로 읽어라."
+   // "푸시버튼의 상태는 버튼핀(위 코드에서 2번 핀으로 지정한 상수이다)을 디지털 신호로 읽어라."
 
   //아래 코드에서는 버튼이 눌러졌는지 확인하고, 그렇다면 buttonState을 HIGH 참으로 지정한다. 그 코드가 만들어진 방법을 유심히 살펴보자.
 
