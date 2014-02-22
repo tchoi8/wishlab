@@ -1,8 +1,13 @@
 <pre><code>
 
 const int buttonPin = 2;    
+<<<<<<< HEAD
 	// 컨스턴트(Constant)는 바뀌지 않는 상수이다. 이곳에서는 핀의 번호를 지정하기 위해 사용된다.
 	// "상수를 정의하는데 그것은 정수이며 이름은 buttonPin 이다." 
+=======
+	// 컨스턴트(Constant)는 바뀌지 않는 값, 즉 상수이다. 여기서는 핀의 번호를 지정하기 위해 사용된다.
+	// "상수를 정의한다. 그것은 정수이며 이름은 buttonPin 이다." 
+>>>>>>> 7dbd83e3c4dda2cfe070b3610a51feb1a6feb85e
 	// 즉 버튼핀 buttonPin이라는 이름을 2번 핀에게 지정하는 것이다.
 	// [achim] 정수인 변수 buttonPin에 2라는 상수값을 부여한다.
 	// [achim] do we need introduce read-only variable for wishlab? confusing, also might as well be "int buttonPin = 2;" for our use
