@@ -37,7 +37,7 @@ void setup() {
 }
 
 void loop(){
-  // read the state of the pushbutton value:
+ 
   buttonState = digitalRead(buttonPin);
  
   if (buttonState == LOW) {     
